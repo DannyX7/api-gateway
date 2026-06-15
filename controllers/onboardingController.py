@@ -4,7 +4,7 @@ import httpx
 
 router = APIRouter(prefix="/onboarding")
 
-SPRING_URL = "http://localhost:8001/"
+SPRING_URL = "https://backend-b1df.onrender.com"
 
 @router.post("/addstep")
 async def addstep(data: Dict, Token: str = Header(...)):
