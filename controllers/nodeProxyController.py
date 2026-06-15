@@ -4,7 +4,7 @@ import httpx
 
 router = APIRouter()
 
-NODE_URL = "http://localhost:8002"
+NODE_URL = "https://taskservices-no9j.onrender.com"
 
 @router.post("/help/seed")
 async def seed_help():

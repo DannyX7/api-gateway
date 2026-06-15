@@ -4,7 +4,7 @@ import httpx
 
 router = APIRouter(prefix="/learning")
 
-SPRING_URL = "http://localhost:8001/"
+SPRING_URL = "https://backend-b1df.onrender.com"
 
 @router.get("/getstudents")
 async def get_students(Token: str = Header(...)):
